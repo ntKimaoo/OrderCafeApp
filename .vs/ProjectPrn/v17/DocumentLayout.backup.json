@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\c#project\\ProjectPrn\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{39C4D1D7-41D0-4BA6-8E69-9134BB4F658B}|ProjectPrn\\ProjectPrn.csproj|e:\\c#project\\projectprn\\projectprn\\w_quanlihoadon.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{39C4D1D7-41D0-4BA6-8E69-9134BB4F658B}|ProjectPrn\\ProjectPrn.csproj|solutionrelative:projectprn\\w_quanlihoadon.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "w_QuanliHoaDon.xaml.cs",
+              "DocumentMoniker": "E:\\c#project\\ProjectPrn\\ProjectPrn\\w_QuanliHoaDon.xaml.cs",
+              "RelativeDocumentMoniker": "ProjectPrn\\w_QuanliHoaDon.xaml.cs",
+              "ToolTip": "E:\\c#project\\ProjectPrn\\ProjectPrn\\w_QuanliHoaDon.xaml.cs",
+              "RelativeToolTip": "ProjectPrn\\w_QuanliHoaDon.xaml.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAAwCkAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-09T02:33:03.302Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

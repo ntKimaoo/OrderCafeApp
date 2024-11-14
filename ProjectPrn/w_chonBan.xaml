@@ -1,0 +1,67 @@
+﻿<Window x:Class="ProjectPrn.w_chonBan"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ProjectPrn"
+        mc:Ignorable="d"
+        Title="Chọn bàn" Height="720" Width="1280" ResizeMode="CanMinimize" WindowStartupLocation="CenterScreen">
+    <Grid Background="LightBlue">
+        <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto">
+
+            <Grid x:Name="GridTable" Margin="3,135,381,2">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+            </Grid>
+        </ScrollViewer>
+        <Rectangle  Fill="White" HorizontalAlignment="Center" Height="121" Margin="0,-5,0,0" Stroke="White" VerticalAlignment="Top" Width="1280"/>
+        <Rectangle  Fill="White" HorizontalAlignment="Left" Height="606" Margin="899,101,0,0" Stroke="White" VerticalAlignment="Top" Width="386"/>
+        <Image Source="images/2.png" HorizontalAlignment="Left" Height="123" Margin="344,11,0,0" VerticalAlignment="Top" Width="328" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.207"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <ListView Name="lvListItem" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="897,110,-2,175" SelectionChanged="lvListItem_SelectionChanged">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Name" Width="150" DisplayMemberBinding="{Binding Path=TenProduct}"></GridViewColumn>
+                    <GridViewColumn Header="Quantity" DisplayMemberBinding="{Binding Path=quantity}"></GridViewColumn>
+                    <GridViewColumn Header="Price" Width="100" DisplayMemberBinding="{Binding Path=price}"></GridViewColumn>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <TextBlock HorizontalAlignment="Left" Margin="906,40,0,0" TextWrapping="Wrap" FontSize="50px" Text="Sản phẩm" VerticalAlignment="Top"/>
+        <Button Content="Thanh toán" Name="btnThanhToan" FontSize="20px" HorizontalAlignment="Left" Margin="1135,48,0,0" VerticalAlignment="Top" Height="58" Width="137" Click="btnThanhToan_Click"/>
+        <Button Content="Log out" Name="btnLogOut" HorizontalAlignment="Left" FontSize="20px" Margin="5,0,0,0" VerticalAlignment="Top" Height="36" Width="112" Click="btnLogOut_Click"/>
+        <Rectangle Fill="Yellow" HorizontalAlignment="Left" Height="47" Margin="640,3,0,0" Stroke="Black" VerticalAlignment="Top" Width="53"/>
+        <Rectangle Fill="Green" HorizontalAlignment="Left" Height="47" Margin="640,63,0,0" Stroke="Black" VerticalAlignment="Top" Width="53"/>
+        <TextBlock HorizontalAlignment="Left" Margin="700,12,0,0" TextWrapping="Wrap" FontSize="20" Text="Đang có khách" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="704,76,0,0" TextWrapping="Wrap" FontSize="20" Text="Trống" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="904,534,0,0" TextWrapping="Wrap" FontSize="50px" VerticalAlignment="Top"><Run Language="vi-vn" Text="Thành tiền:"/></TextBlock>
+        <TextBlock x:Name="tongTien" HorizontalAlignment="Left" Margin="942,615,0,0" TextWrapping="Wrap" FontSize="50px" VerticalAlignment="Top"><Run Language="vi-vn" Text="0.0"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="7,77,0,0" TextWrapping="Wrap" FontSize="20" VerticalAlignment="Top"><Run Text="Nhân viên:"/><LineBreak/><Run/></TextBlock>
+        <TextBlock Name="tblId" HorizontalAlignment="Left" Margin="36,47,0,0" TextWrapping="Wrap" FontSize="20" VerticalAlignment="Top" Text="1" Width="33"/>
+        <TextBlock Name="tblName" HorizontalAlignment="Left" Margin="108,77,0,0" TextWrapping="Wrap" FontSize="20" VerticalAlignment="Top" Text="nguyenvana" Width="203"/>
+        <TextBlock HorizontalAlignment="Left" Margin="7,47,0,0" TextWrapping="Wrap" FontSize="20" VerticalAlignment="Top"><Run Text="Id:"/><LineBreak/><Run/></TextBlock>
+
+    </Grid>
+</Window>
